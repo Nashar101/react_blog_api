@@ -1,18 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import {BrowserRouter as Router} from "react-router-dom";
+import NavBar  from "./components/NavBar"
 import './App.css'
-import PostsList from "./features/posts/PostList.jsx"
+import AppRoutes from "./components/AppRoutes.jsx";
 function App() {
 
   return (
-
-      <>
-          <h1>React on Rails Blog</h1>
+      <Router>
+       p   <h1>React on Rails Blog</h1>
           <p>Find this layout in client/src/App.jsx</p>
           <br/>
-          <PostsList/>
-      </>
+          <NavBar/>
+          <AppRoutes/>
+      </Router>
+
   )
 }
 
