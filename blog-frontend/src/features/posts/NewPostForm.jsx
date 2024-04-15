@@ -15,7 +15,7 @@ function NewPostForm(){
         /changed postData to post to allow it to pass post_params of API/
         const postData = {title, body};
         /we are passing this to RAILS API so it needs to be in a JSON format/
-        const respone = await fetch(API_URL, {
+        const response = await fetch(API_URL, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
